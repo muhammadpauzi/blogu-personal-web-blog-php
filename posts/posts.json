@@ -3,6 +3,8 @@
         "id": 1,
         "title": "Why you should learn programming?",
         "markdown": "why-you-should-learn-programming.md",
+        "description": "This article will show you why you shoul learn programming?",
+        "thumbnail": "why-you-should-learn-programming.jpg",
         "categories": [
             "programming"
         ]
@@ -11,6 +13,8 @@
         "id": 2,
         "title": "How to learn programming with more effient?",
         "markdown": "how-to-learn-programming-with-more-effient.md",
+        "description": "This article will show you how to learn programming with more effient?",
+        "thumbnail": "how-to-learn-programming-with-more-effient.jpg",
         "categories": [
             "programming",
             "tips"
@@ -20,9 +24,24 @@
         "id": 3,
         "title": "How to make a website from zero to hero?",
         "markdown": "how-to-make-a-website-from-zero-to-hero.md",
+        "description": "This article will show you how to make a website from zero to hero?",
+        "thumbnail": "how-to-make-a-website-from-zero-to-hero.jpg",
         "categories": [
             "programming",
             "website"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Top Things an Interviewer Looks For During a Job Interview.",
+        "markdown": "top-things-an-interviewer-looks-for-during-a-job interview.md",
+        "description": "This article will show you how to make a website from zero to hero?",
+        "thumbnail": "top-things-an-interviewer-looks-for-during-a-job interview.jpg",
+        "categories": [
+            "programming",
+            "tips",
+            "tricks",
+            "interview"
         ]
     }
 ]

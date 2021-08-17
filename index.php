@@ -1,5 +1,5 @@
 <?php
-$blogs = json_decode(file_get_contents('./data/blogs.json'), true);
+$posts = json_decode(file_get_contents('./posts/posts.json'), true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,50 +41,19 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
             <h1 class="title title-md mb-4">Latest Posts</h1>
 
             <div class="posts-grid">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/posts/img1.jpg" alt="Blog's Thumbnail">
+                <?php foreach ($posts as $post) : ?>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./images/posts/<?= $post['thumbnail']; ?>" alt="<?= $post['title']; ?>">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title"><a href="post.php"><?= $post['title']; ?></a></h2>
+                            <p class="card-text">
+                                <?= $post['description']; ?>
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h2 class="card-title"><a href="post.php">How to learn programming with more efficient?</a></h2>
-                        <p class="card-text">
-                            This article is gonna show you how to learn programming more efficient?
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/posts/img2.jpg" alt="Blog's Thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title"><a href="post.php">How to make a website from zero to hero?</a></h2>
-                        <p class="card-text">
-                            This article is gonna show you how to make a website from zero to hero?
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/posts/img3.jpg" alt="Blog's Thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title"><a href="post.php">Why you should learn programming?</a></h2>
-                        <p class="card-text">
-                            This article is gonna show you why you should learn programming?
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./images/posts/img4.jpg" alt="Blog's Thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title"><a href="post.php">What's a new of PHP 8?</a></h2>
-                        <p class="card-text">
-                            This article is gonna show you what's a new of PHP 8?
-                        </p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
