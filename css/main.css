@@ -183,13 +183,30 @@ body{
 
 /* blogs */
 .blogs{
-	padding: 2rem 0;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
 }
 
 .blogs .blogs-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+}
+
+.footer{
+	padding: 2rem 1rem;
+	background-color: var(--background-color-footer);
+	text-align: center;
+	font-weight: var(--font-medium);
+	color: var(--gray-text-color-footer);
+}
+
+.footer .footer-highlight{
+	color: var(--white);
+}
+
+.footer .footer-highlight:hover{
+	text-decoration: underline;
 }
 
 @media (max-width: 500px){

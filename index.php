@@ -89,6 +89,12 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <p>Created and managed by <a href="/" class="footer-highlight">Muhammad Pauzi.</a></p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
