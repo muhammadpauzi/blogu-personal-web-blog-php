@@ -169,7 +169,7 @@ body{
 /* hero */
 .hero{
 	padding: 3rem 1rem;
-	/* background-color: var(--background-color); */
+	background-image: url(../images/spikes.png);
 	margin-top: 1rem;
     min-height: 400px;
 }
