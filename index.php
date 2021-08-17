@@ -95,6 +95,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
         </div>
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

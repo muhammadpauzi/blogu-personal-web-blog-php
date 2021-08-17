@@ -139,7 +139,11 @@ body{
     left: 0;
     right: 0;
     z-index: 9999;
-    /* transition: box-shadow .3s; */
+    transition: box-shadow .3s;
+}
+
+.navbar.active{
+	box-shadow: 0 2px 2px rgba(0,0,0, .05);
 }
 
 .navbar .logo{
@@ -147,11 +151,6 @@ body{
     font-weight: var(--font-bold);
     font-size: 1.4rem;
 }
-
-/* 
-.navbar.active{
-	box-shadow: 0 2px 4px rgba(0,0,0, .05);
-} */
 
 .link-item{
 	display: block;
