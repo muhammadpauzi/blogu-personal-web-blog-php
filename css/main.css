@@ -176,7 +176,7 @@ body{
 .hero p {
 	color: var(--gray-text-color);
 	max-width: 100%;
-	width: 600px;
+	width: 500px;
 	line-height: var(--line-height);
 }
 
