@@ -180,13 +180,13 @@ body{
 	line-height: var(--line-height);
 }
 
-/* blogs */
-.blogs{
+/* posts */
+.posts{
 	padding-top: 3rem;
 	padding-bottom: 5rem;
 }
 
-.blogs .blogs-grid{
+.posts .posts-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
@@ -209,7 +209,7 @@ body{
 }
 
 @media (max-width: 500px){
-	.blogs .blogs-grid{
+	.posts .posts-grid{
 		grid-template-columns: 1fr;
 	}
 }

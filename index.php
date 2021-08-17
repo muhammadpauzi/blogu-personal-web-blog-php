@@ -36,11 +36,11 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
         </div>
     </div>
 
-    <div class="blogs">
+    <div class="posts">
         <div class="container text-center">
             <h1 class="fs-2 mb-4">Latest Posts</h1>
 
-            <div class="blogs-grid">
+            <div class="posts-grid">
                 <div class="card">
                     <div class="card-image">
                         <img src="./images/posts/img1.jpg" alt="Blog's Thumbnail">
