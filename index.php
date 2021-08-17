@@ -32,7 +32,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
     <div class="hero flex ai-c">
         <div class="container text-center">
             <h1 class="fs-2 mb-2">Improve your knowledge with <span class="text-primary">Blogu.</span></h1>
-            <p class="mx-auto fw-medium">Blogu is a personal blog platform that contains about programming, technology, web and so on.</p>
+            <p class="mx-auto fw-medium">Blogu is a personal blog that contains about programming, technology, web and so on.</p>
         </div>
     </div>
 
