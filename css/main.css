@@ -1,6 +1,7 @@
 :root{
 	--primary-color: #6754E3;
 	--text-color: #0D123A;
+	--text-color-2: #262d5f;
 	--gray-text-color: #8A8D92;
 	--background-color: #FBFAFF;
 	--background-color-footer: #423C86;
@@ -42,6 +43,16 @@ body{
 	position: relative;
 }
 
+.title{
+	font-size: 2rem;
+	font-weight: var(--font-bold);
+	color: var(--text-color);
+}
+
+.title-md{
+	font-size: 1.5rem;
+}
+
 /* flexs */
 .flex
 {
@@ -56,6 +67,10 @@ body{
 .ai-c
 {
 	align-items: center !important;
+}
+
+.gap-1{
+	gap: .500rem;
 }
 
 /* paddings */
@@ -97,6 +112,19 @@ body{
 	color: var(--primary-color) !important;
 }
 
+/* buttons */
+.btn{
+	padding: .7rem 2rem;
+	color: var(--text-color);
+	font-weight: var(--font-medium);
+	display: inline-block;
+}
+
+.btn-primary{
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
 /* card */
 .card{
 	width: 100%;
@@ -117,10 +145,14 @@ body{
 	padding: 1.2rem 1rem;
 }
 
-.card .card-content .card-title{
+.card .card-content :where(a,.card-title){
 	color: var(--text-color);
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-bottom: .5rem;
+}
+
+.card .card-content a:hover{
+	text-decoration: underline;
 }
 
 .card .card-content .card-text{
@@ -169,8 +201,15 @@ body{
 .hero{
 	padding: 3rem 1rem;
 	background-image: url(../images/spikes.png);
-	margin-top: 1rem;
+	margin-top: 3rem;
     min-height: 400px;
+}
+
+.hero-post{
+	padding: 3rem 1rem;
+	background-image: url(../images/spikes.png);
+	margin-top: 3rem;
+	min-height: 300px;
 }
 
 .hero p {
@@ -190,6 +229,55 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+}
+
+.post{
+	padding: 7rem 1rem;
+}
+
+.post .image-thumbnail{
+	width: 100%;
+}
+
+.post .image-thumbnail img{
+	width: 100%;
+	display: block;
+}
+
+.post .title{
+	margin: 1rem 0;
+}
+
+.post-info {
+	padding-bottom: 1rem;
+	font-weight: var(--font-medium);
+}
+
+.category{
+	padding: .4rem .5rem;
+	background-color: var(--primary-color);
+	border-radius: .1rem;
+	color: var(--white);
+	font-size: .8em;
+	font-weight: var(--font-bold);
+
+}
+
+.post .post-content{
+	padding: 2rem 0;
+}
+
+.post .post-content :where(h1, h2, h3,h4,h5,h6){
+	color: var(--text-color);
+}
+
+.post .post-content p{
+	color: var(--text-color-2);	
+	line-height: var(--line-height);
+	margin: 1rem 0;
+	font-weight: 400;
+	font-size: .9rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Merriweather', 'Poppins','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer{

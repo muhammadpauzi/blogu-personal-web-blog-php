@@ -31,14 +31,14 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
 
     <div class="hero flex ai-c">
         <div class="container text-center">
-            <h1 class="fs-2 mb-2">Improve your knowledge with <span class="text-primary">Blogu.</span></h1>
+            <h1 class="title mb-2">Improve your knowledge with <span class="text-primary">Blogu.</span></h1>
             <p class="mx-auto fw-medium">Blogu is a personal blog that contains about programming, technology, web and so on.</p>
         </div>
     </div>
 
     <div class="posts">
         <div class="container text-center">
-            <h1 class="fs-2 mb-4">Latest Posts</h1>
+            <h1 class="title title-md mb-4">Latest Posts</h1>
 
             <div class="posts-grid">
                 <div class="card">
@@ -46,7 +46,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
                         <img src="./images/posts/img1.jpg" alt="Blog's Thumbnail">
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">How to learn programming with more efficient?</h2>
+                        <h2 class="card-title"><a href="post.php">How to learn programming with more efficient?</a></h2>
                         <p class="card-text">
                             This article is gonna show you how to learn programming more efficient?
                         </p>
@@ -57,7 +57,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
                         <img src="./images/posts/img2.jpg" alt="Blog's Thumbnail">
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">How to make a website from zero to hero?</h2>
+                        <h2 class="card-title"><a href="post.php">How to make a website from zero to hero?</a></h2>
                         <p class="card-text">
                             This article is gonna show you how to make a website from zero to hero?
                         </p>
@@ -68,7 +68,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
                         <img src="./images/posts/img3.jpg" alt="Blog's Thumbnail">
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Why you should learn programming?</h2>
+                        <h2 class="card-title"><a href="post.php">Why you should learn programming?</a></h2>
                         <p class="card-text">
                             This article is gonna show you why you should learn programming?
                         </p>
@@ -79,7 +79,7 @@ $blogs = json_decode(file_get_contents('./data/blogs.json'), true);
                         <img src="./images/posts/img4.jpg" alt="Blog's Thumbnail">
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">What's a new of PHP 8?</h2>
+                        <h2 class="card-title"><a href="post.php">What's a new of PHP 8?</a></h2>
                         <p class="card-text">
                             This article is gonna show you what's a new of PHP 8?
                         </p>
