@@ -153,6 +153,7 @@ body{
 
 .card .card-content a:hover{
 	text-decoration: underline;
+	color: var(--primary-color);
 }
 
 .card .card-content .card-text{
@@ -260,7 +261,6 @@ body{
 	color: var(--white);
 	font-size: .8em;
 	font-weight: var(--font-bold);
-
 }
 
 .post .post-content{
