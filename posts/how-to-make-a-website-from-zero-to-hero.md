@@ -1,4 +1,4 @@
-Hello👋, This article will tell to you why you should learn programming?
+Hello, This article will tell to you why you should learn programming?
 
 ## The first reason that's gonna make you suprised
 On average, a full-time programmer spends nearly 20 hours a week on coding. Beat it to be even better. Take additional projects, apply to new Teams, act as freelancers, and look for new orders and code non-commercial projects.

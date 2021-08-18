@@ -47,7 +47,7 @@ $posts = json_decode(file_get_contents('./posts/posts.json'), true);
                             <img src="./images/posts/<?= $post['thumbnail']; ?>" alt="<?= $post['title']; ?>">
                         </div>
                         <div class="card-content">
-                            <h2 class="card-title"><a href="post.php"><?= $post['title']; ?></a></h2>
+                            <h2 class="card-title"><a href="post.php?id=<?= $post['id']; ?>"><?= $post['title']; ?></a></h2>
                             <p class="card-text">
                                 <?= $post['description']; ?>
                             </p>
