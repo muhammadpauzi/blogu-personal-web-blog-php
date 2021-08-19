@@ -8,6 +8,7 @@
 	--gray-text-color-footer: #A8A3E5;
 	--white: #FFF;
 	--line-height: 28px;
+	--line-height-2: 32px;
 	--font-medium: 500;
 	--font-bold: 700;
 }
@@ -273,7 +274,7 @@ body{
 
 .post .post-content p{
 	color: var(--text-color-2);	
-	line-height: var(--line-height);
+	line-height: var(--line-height-2);
 	margin: 1rem 0;
 	font-weight: 400;
 	font-size: 1rem;
