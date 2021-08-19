@@ -52,17 +52,17 @@ function getMarkdown()
             <a href="/" class="btn btn-primary">Back</a>
             <h1 class="title"><?= $post['title']; ?></h1>
             <div class="post-info">
-                <p>Written by <span class="text-primary">Muhammad Pauzi</span> - August 17 2021</p>
+                <p>Written by <span class="text-primary">Muhammad Pauzi</span> - <?= date('F d Y', $post['publishedAt']); ?></p>
+            </div>
+            <div class="flex gap-1 mb-4">
+                <div class="category">Programming</div>
+                <div class="category">Tech</div>
+                <div class="category">PHP</div>
             </div>
             <div class="image-thumbnail">
                 <img src="./images/posts/<?= $post['thumbnail']; ?>" alt="<?= $post['title']; ?>">
             </div>
             <div class="post-content"></div>
-            <div class="flex gap-1">
-                <div class="category">Programming</div>
-                <div class="category">Tech</div>
-                <div class="category">PHP</div>
-            </div>
         </div>
     </div>
 
