@@ -24,7 +24,7 @@ function getMarkdown()
 
 <head>
     <?php require './partials/head.php'; ?>
-    <title>Home | Blogu</title>
+    <title><?= $post['title']; ?> | Blogu</title>
 </head>
 
 <body>
