@@ -151,6 +151,11 @@ body{
 	padding: 1.2rem 1rem;
 }
 
+.card .card-content .card-info{
+	font-weight: var(--font-medium);
+	color: var(--gray-text-color);
+}
+
 .card .card-content :where(a,.card-title){
 	color: var(--primary-color);
 	font-size: 1.1rem;

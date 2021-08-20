@@ -1,5 +1,6 @@
 <?php
-$posts = json_decode(file_get_contents('./posts/posts.json'), true);
+require './app/Posts.php';
+$posts = Posts::getPosts(limit: 4);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +32,7 @@ $posts = json_decode(file_get_contents('./posts/posts.json'), true);
                             <img src="./images/posts/<?= $post['thumbnail']; ?>" alt="<?= $post['title']; ?>">
                         </div>
                         <div class="card-content">
+                            <small class="card-info"><?= date('F d Y', $post['publishedAt']); ?></small>
                             <h2 class="card-title"><a href="post.php?id=<?= $post['id']; ?>"><?= $post['title']; ?></a></h2>
                             <p class="card-text">
                                 <?= $post['description']; ?>
