@@ -6,6 +6,7 @@
         "description": "This article will show you why you shoul learn programming?",
         "thumbnail": "why-you-should-learn-programming.jpg",
         "publishedAt": 1629385779,
+        "writtenBy": "Muhammad Pauzi",
         "categories": [
             "programming"
         ]
@@ -17,6 +18,7 @@
         "description": "This article will show you how to learn programming with more effient?",
         "thumbnail": "how-to-learn-programming-with-more-effient.jpg",
         "publishedAt": 1629385779,
+        "writtenBy": "Muhammad Pauzi",
         "categories": [
             "programming",
             "tips"
@@ -29,6 +31,7 @@
         "description": "This article will show you how to make a website from zero to hero?",
         "thumbnail": "how-to-make-a-website-from-zero-to-hero.jpg",
         "publishedAt": 1629385779,
+        "writtenBy": "Muhammad Pauzi",
         "categories": [
             "programming",
             "website"
@@ -41,6 +44,7 @@
         "description": "This article will show you how to make a website from zero to hero?",
         "thumbnail": "top-things-an-interviewer-looks-for-during-a-job-interview.jpg",
         "publishedAt": 1629385779,
+        "writtenBy": "Muhammad Pauzi",
         "categories": [
             "programming",
             "tips",

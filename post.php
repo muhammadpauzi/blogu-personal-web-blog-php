@@ -35,7 +35,7 @@ function getMarkdown()
         <div class="container">
             <h1 class="title"><?= $post['title']; ?></h1>
             <div class="post-info">
-                <p>Written by <span class="text-primary">Muhammad Pauzi</span> - <?= date('F d Y', $post['publishedAt']); ?></p>
+                <p>Written by <span class="text-primary"><?= $post['writtenBy']; ?></span> - <?= date('F d Y', $post['publishedAt']); ?></p>
             </div>
             <div class="flex gap-1 mb-4">
                 <?php foreach ($post['categories'] as $category) : ?>
