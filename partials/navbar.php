@@ -7,7 +7,7 @@
                 <a href="/" class="link-item">Home</a>
             </li>
             <li>
-                <a href="/" class="link-item">About Me</a>
+                <a href="/posts.php" class="link-item">Posts</a>
             </li>
         </ul>
     </div>
