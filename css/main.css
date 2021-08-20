@@ -147,19 +147,19 @@ body{
 }
 
 .card .card-content :where(a,.card-title){
-	color: var(--text-color);
+	color: var(--primary-color);
 	font-size: 1.1rem;
 	margin-bottom: .5rem;
 }
 
 .card .card-content a:hover{
 	text-decoration: underline;
-	color: var(--primary-color);
 }
 
 .card .card-content .card-text{
-	color: var(--gray-text-color);
+	color: var(--text-color);
 	font-size: .900rem;
+	font-weight: var(--font-medium);
 	line-height: 25px;
 }
 
@@ -272,13 +272,16 @@ body{
 	color: var(--text-color);
 }
 
+.post .post-content :not(h1, h2, h3,h4,h5,h6, code){
+	font-family: 'Merriweather', -apple-system, BlinkMacSystemFont,  'Poppins','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .post .post-content p{
 	color: var(--text-color-2);	
 	line-height: var(--line-height-2);
 	margin: 1rem 0;
-	font-weight: 400;
+	font-weight: var(--font-medium);
 	font-size: 1rem;
-	font-family: 'Merriweather', -apple-system, BlinkMacSystemFont,  'Poppins','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer{
@@ -298,7 +301,36 @@ body{
 }
 
 @media (max-width: 500px){
+	/* card */
+	.card .card-content :where(a,.card-title){
+		font-size: 1rem;
+		margin-bottom: .7rem;
+	}
+
+	.card .card-content .card-text{
+		line-height: 25px;
+	}
+
+	/* posts */
 	.posts .posts-grid{
 		grid-template-columns: 1fr;
+	}
+
+	.post .title{
+		font-size: 1.5rem;
+	}
+
+	.post .post-info p {
+		font-size: .8rem;
+	}
+
+	.post .post-content p {
+		font-size: 1.05rem;
+	}
+
+	/* footer */
+	.footer{
+		padding: 1rem 0;
+		font-size: .9rem;
 	}
 }
