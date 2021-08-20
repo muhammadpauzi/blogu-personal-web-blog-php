@@ -38,9 +38,9 @@ function getMarkdown()
                 <p>Written by <span class="text-primary">Muhammad Pauzi</span> - <?= date('F d Y', $post['publishedAt']); ?></p>
             </div>
             <div class="flex gap-1 mb-4">
-                <div class="category">Programming</div>
-                <div class="category">Tech</div>
-                <div class="category">PHP</div>
+                <?php foreach ($post['categories'] as $category) : ?>
+                    <div class="category"><?= $category; ?></div>
+                <?php endforeach; ?>
             </div>
             <div class="image-thumbnail">
                 <img src="./images/posts/<?= $post['thumbnail']; ?>" alt="<?= $post['title']; ?>">
