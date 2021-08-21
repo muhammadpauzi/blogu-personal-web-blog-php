@@ -119,11 +119,21 @@ body{
 	color: var(--text-color);
 	font-weight: var(--font-medium);
 	display: inline-block;
+	border: none;
+	cursor: pointer;
 }
 
 .btn-primary{
 	background-color: var(--primary-color);
 	color: var(--white);
+}
+
+/* inputs */
+.input{
+	padding: .6rem .7rem;
+	border: 1px solid var(--primary-color);
+	font-size: 1rem;
+	font-weight: var(--font-medium);
 }
 
 /* card */
@@ -241,6 +251,15 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+}
+
+.posts .posts-filter-bar{
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+}
+
+.posts .posts-filter-bar .input{
+	width: 100%;
 }
 
 .post{

@@ -1,6 +1,9 @@
 <?php
-require './app/Posts.php';
-$posts = Posts::getPosts();
+require './functions.php';
+$posts = getPosts();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $posts = searchPosts($_POST['keyword']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +17,14 @@ $posts = Posts::getPosts();
 
     <?php require './partials/navbar.php' ?>
 
+
     <div class="posts">
         <div class="container text-center">
-            <h1 class="title title-md mb-4">Latest Posts</h1>
-
+            <div class="posts-filter-bar">
+                <form action="" method="post">
+                    <input type="text" class="input" placeholder="Enter keyword..." name="keyword">
+                </form>
+            </div>
             <div class="posts-grid">
                 <?php foreach ($posts as $post) : ?>
                     <div class="card">

@@ -1,6 +1,6 @@
 <?php
-require './app/Posts.php';
-$posts = Posts::getPosts(limit: 4);
+require './functions.php';
+$posts = getPosts(limit: 4);
 ?>
 <!DOCTYPE html>
 <html lang="en">
